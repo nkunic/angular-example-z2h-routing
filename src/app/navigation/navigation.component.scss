@@ -1,0 +1,31 @@
+.navigation {
+  height: 3rem;
+
+  ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .navigation-link {
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+      color: black;
+      background-color: #dfeb7a;
+    }
+    &.navigation__link--active {
+      background-color: #ad4a4a;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
